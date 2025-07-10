@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ua-en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCM на іншому піні arduino</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/headerFooter.css" />
+
+</head>
+
+<body>
+    <div class="main-site-header">
+        <a class="logo-button" href="/"><img src="./img/logo.png" /></a>
+        <!-- <a class="logo-button">1nterno</a> -->
+        <!-- <img class="header-little-box-img" src="../img/menu_little.svg" alt=""> -->
+        <div class="header-table-box">
+            <ul class="header-table">
+                <li>
+                    <div class="header-dropdown">
+                        <button class="dropbtn"><a class="header-table-main" href="#">Проекти</a></button>
+                        <div class="header-dropdown-elements">
+                            <a href="">Програмування програм для ПК</a>
+                            <a href="">Програмування web програм</a>
+                            <a href="">Програмування для мікроконтроллерів</a>
+                            <a href="">Проекти без участі програмування</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header-dropdown">
+                        <button class="dropbtn"><a class="header-table-main">Софт</a></button>
+                        <div class="header-dropdown-elements">
+                            <a href="">Від 1nterno</a>
+                            <a href="">Корисний софт для ПК</a>
+                            <a href="">Бібліотеки для С/С++</a>
+                            <a href="">Бібліотеки для мікроконтроллерів</a>
+                            <a href="https://github.com/1nterno">Github</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header-dropdown">
+                        <button class="dropbtn"><a class="header-table-main" href="/articles/">Статті</a></button>
+                        <div class="header-dropdown-elements">
+                            <a href="/articles/">Програмування С/С++</a>
+                            <a href="/articles/">Електрика</a>
+                            <a href="/articles/">Мікроконтроллери</a>
+                            <a href="/articles/">Наука</a>
+                            <a href="/articles/">Про різне</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header-dropdown">
+                        <button class="dropbtn"><a class="header-table-main">Покупки</a></button>
+                        <div class="header-dropdown-elements">
+                            <a href="">Корисне з AliExpress</a>
+                            <a href="">Коди програм</a>
+                            <a href="">ПЗ для ПК</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header-dropdown">
+                        <button class="dropbtn"><a class="header-table-main">Соцмережі</a></button>
+                        <div class="header-dropdown-elements">
+                            <a href="">Telegram</a>
+                            <a href="">Instagram</a>
+                            <a href="">Youtube</a>
+                            <a href="https://github.com/1nterno">Github</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Проекти</a>
+                    <ul class="menu__item_secondary">
+                        <li><a href="">Програмування програм для ПК</a> </li>
+                        <li><a href="">Програмування web програм</a> </li>
+                        <li><a href="">Програмування для мікроконтроллерів</a> </li>
+                        <li><a href="">Проекти без участі програмування</a> </li>
+                    </ul>
+                </li>
+                <li><a class="menu__item" href="#">Софт</a>
+                    <ul class="menu__item_secondary">
+                        <li><a href="">Від 1nterno</a></li>
+                        <li><a href="">Корисний софт для ПК</a></li>
+                        <li><a href="">Бібліотеки для С/С++</a></li>
+                        <li><a href="">Бібліотеки для мікроконтроллерів</a></li>
+                        <li><a href="https://github.com/1nterno">Github</a></li>
+                    </ul>
+                </li>
+                <li><a class="menu__item" href="/articles/">Статті</a>
+                    <ul class="menu__item_secondary">
+                        <li><a href="/articles/">Програмування С/С++</a></li>
+                        <li><a href="/articles/">Електрика</a></li>
+                        <li><a href="/articles/">Мікроконтроллери</a></li>
+                        <li><a href="/articles/">Наука</a></li>
+                        <li><a href="/articles/">Про різне</a></li>
+                    </ul>
+                </li>
+                <li><a class="menu__item" href="#">Покупки</a></li>
+                <li><a class="menu__item" href="#">Соцмережі</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- <div class="any-information">
+
+    </div> -->
+    <div class="header-of-article">
+        <div class="header-of-article-img">
+            <img src="img/header.png" alt="">
+        </div>
+        <div class="header-of-article-text">
+            <p>PCM на іншому піні arduino</p>
+        </div>
+    </div>
+
+    <div class="the-article">
+        <p class=classic-text>
+            Під час роботи над проектом з мікроконтролером може виникнути ситуація, коли
+            потрібно програти деякий звук (звук помилки, або звук при натисканні на кнопку, тощо).
+            Найчастіше, використовують звичайну п'єзопищалку, та</p>
+        <div class="code-one"><p class="orange-code">digitalWrite<p class="white-code">()</p></p></div>
+        <p class=classic-text>конструкцію, заради економії ресурсів. Тим, кому не шкода
+            другого таймера мікроконтролера, використовують бібліотеку </p><p class="bold-text">tone,</p>
+            <div class="code-one"><p class="orange-code">delay</p><p class="white-code">()</p></div>
+            <p class=classic-text>та масиви нот і затримок.</p>
+            <p class=classic-text>Проте, цей метод є незручним, оскільки потрібно підібрати точні ноти і затримки, до того ж </p><div class="code-one"><p class="orange-code">delay</p><p class="white-code">()</p></div>
+            <p class=classic-text>блокує виконання коду.</p>
+            <p class=new-line></p>
+            <p class=classic-text>Для того, щоб легко програвати будь які короткі аудіофайли, було створено бібліотеку </p><p class="bold-text">PCM.h.</p>
+            <p class=classic-text>Як зрозуміло з назви, ця бібліотека використовує технологію </p><p class="bold-text">PCM</p>
+            <p class=classic-text>(pulse code modulation - імпульсно-кодова модуляція). Тобто аналоговий сигнал перетвоюється
+                 на цифровий, а потім знову перетворюється на аналоговий (демодуляція).</p>
+            <p class=new-line></p>
+            <p class=classic-text>Оригінальна бібліотека використовує два таймери - </p><div class="code-one"><p class="blue-code">timer 1</p></div>
+            <p class=classic-text>та </p><div class="code-one"><p class="blue-code">timer 2</p></div>
+            <p class=new-line></p>
+            <div class="code-one"><p class="blue-code">timer 1</p></div>
+            <p class=classic-text>використовується для створення переривання по таймеру, щоб програма могла відворювати звук 
+                з частотою 8000 Гц, другий таймер використовується для створення ШІМ. Оскільки два таймери використовуються, зникає ШІМ на пінах 3, 9, 10, та 11.
+                Сама ж бібліотека використовує вивід 11 для підключення динаміка чи підсилювача звуку.</p>
+            <p class=new-line></p>
+            <p class=classic-text>Начебто, нічого поганого. Підключаєш динамік або підсилювач, і звук буде. Але, що робити,
+                коли 11 вивід необхідний для іншого модуля, або датчика? 
+            </p>
+            <p class=new-line></p>
+            <p class=classic-text>Саме тому й створена ця стаття. Під час роботи над моїм проектом рації, я вирішив,
+                 що передаватиму звук за допомогою </p><p class="bold-text">nrf24l01,</p>
+            <p class=classic-text>а відтворюватиму його за допомогою РСМ (можливо це не найкращий вибір, але не важливо). Модуль вимагає підключення до піна 11, 
+                тому я трохи змінив код в бібліотеці </p><p class="bold-text">PCM.h.</p>
+            <p class=new-line></p>
+            <p class=classic-text>Тепер замість другого таймеру використовується</p><div class="code-one"><p class="blue-code">timer 0</p></div>
+            <p class=classic-text>Цей таймер використовується для рахування часу та обслуговування функцій </p>
+            <div class="code-one"><p class="orange-code">delay</p><p class="white-code">()</p></div>
+            <div class="code-one"><p class="orange-code">millis</p><p class="white-code">()</p></div>
+            <div class="code-one"><p class="orange-code">micros</p><p class="white-code">()</p></div>
+            <p class=classic-text>тому, коли звук відворюється (лише коли відтворюється!) функції "ламаються" і 
+                працюють не правильно. Також можливо (не перевіряв) зникне ШІМ на пінах 6 та 5, проте відновиться на пінах 11 та 3.
+            </p>
+            <p class=new-line></p>
+            <p class=classic-text>Після змін бібліотека використовує 6 пін arduino для виводу звуку, також були змінені та додані деякі функції:</p>
+            <ul class="classic-list">
+                <li>
+                    <div class="code-one"><p class="blue-code">void </p><p class="orange-code">startPlayback</p><p class="white-code">(</p><p class="blue-code">unsigned char </p><p class="white-code">*</p><p class="azure-code">data</p><p class="white-code">, </p><p class="blue-code">int </p><p class="azure-code">length</p><p class="white-code">)</p></div>
+                    <p class=classic-text>- функція для відтворення звуку збереженого НЕ в</p><div class="code-one"><p class="blue-code">PROGMEM</p></div>
+                    <p class=classic-text> Можна використати для відтворення звуку, отриманого з мікрофона, радіомодуля, SD карти, тощо.</p>
+                </li>
+                <li>
+                    <div class="code-one"><p class="blue-code">void </p><p class="orange-code">startPlaybackProgmem</p><p class="white-code">(</p><p class="blue-code">const unsigned char </p><p class="white-code">*</p><p class="azure-code">data</p><p class="white-code">, </p><p class="blue-code">int </p><p class="azure-code">length</p><p class="white-code">)</p></div>
+                    <p class=classic-text>- відтворює звук збережений в</p><div class="code-one"><p class="blue-code">PROGMEM</p></div>
+                    <p class=classic-text>(flash пам'ять)</p>
+                </li>
+                <li>
+                    <div class="code-one"><p class="blue-code">void </p><p class="orange-code">initPCM</p><p class="white-code">(</p><p class="green-code">byte </p><p class="white-code">*</p><p class="azure-code">bTCCR0A</p><p class="white-code">, </p><p class="green-code">byte </p><p class="white-code">*</p><p class="azure-code">bTCCR0B</p><p class="white-code">)</p></div>
+                    <p class=classic-text>- ініціалізація, потрібно вставити в початок (до функцій відтворення звуку) блоку </p><div class="code-one"><p class="blue-code">void </p><p class="orange-code">setup</p><p class="white-code">()</p></div>
+                    <p class=classic-text>у вигляді:</p>
+                    <div class="code-one"><p class="orange-code">initPCM</p><p class="white-code">(</p><p class="blue-code">TCCR0A</p><p class="white-code">, </p><p class="blue-code">TCCR0B</p><p class="white-code">);</p></div>
+                </li>
+            </ul>
+            <div class="center-text"><p class=header-text>Скачати бібліотеку можна <a href="./src.zip" class="header-ref">тут</a> </p></div>
+    </div>
+
+
+    <div class="main-site-footer">
+        <div class="main-site-footer-who-created">
+            <p>Created by 1nterno ©</p>
+        </div>
+        <div class="main-site-footer-find-problem">
+            <a href="#">Знайшли проблему?</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div class="coding-block">
+        <div class="coding-block-header">
+            <p class="coding-block-header">Програмування</p>
+        </div>
+    </div> -->
+</body>
+
+</html>
+<!--
+
+
+249e9e    
+<li><a href="">Проекти</a></li>
+<li><a href="">Софт</a></li>
+<li><a href="">Статті</a></li>
+<li><a href="">Соцмережі</a></li>
+
+
+-->
